@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title"> Beau Tour</h1> 
+  <p id="description">Please fulfill all required information</p> 
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required></label>
+    
+    <label id="email-label" for="mail">Email <input id="email" type="email" placeholder="Enter your email" required></label> 
+    
+    <label id="number-label" for="number">Age <input id="number" type="number" placeholder="Enter a number" min="13" max="120" ></label>
+    </fieldset>
+    <fieldset>
+      <h4>How much would you like to contribute?</h4>
+      <label for="10$">
+         <input id="10%" type="checkbox" name="contribution" class="inline"> 10$
+      </label>
+      <label for="20$">
+         <input id="20$" type="checkbox" name="contribution" class="inline"> 20$
+      </label>
+      <label for="30$">
+         <input id="30$" type="checkbox" name="contribution" class="inline"> 30$ 
+      </label>
+    </fieldset>
+    <fieldset> 
+      <h4>How would you like the tour?</h4>
+      <label for="bus">
+         <input id="bus" type="radio" name="tour-type" class="inline"> By bus
+      </label>
+      <label for="train">
+         <input id="train" type="radio" name="tour-type" class="inline"> By train
+      </label>
+      <label for="walking">
+         <input id="walking" type="radio" name="tour-type" class="inline"> Walking 
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown"> Choose the language you would like the tour: 
+        <select id="dropdown">
+      <option value="">(select one)</option>
+      <option value="1">English</option>
+      <option value="2">Spanish</option>
+      <option value="3">French</option>
+      <option value="4">Portuguese</option>
+    </select>
+      </label>  
+    </fieldset>
+
+    <label for="comments">Additional comments: 
+          <textarea id="comments" name="additional-comments" rows="3" cols="30" placeholder="I love having a tour..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+  </form>
+</body>
+</html>
